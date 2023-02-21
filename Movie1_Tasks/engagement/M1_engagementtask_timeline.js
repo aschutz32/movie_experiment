@@ -59,48 +59,48 @@ var preload = {
 
 var audiotest_trial = {
   type: jsPsychAudioKeyboardResponse,
-  stimulus: '../audio/waterfall.mp3'
+  stimulus: 'audio/waterfall.mp3'
 }
 
 // Preloading Clips from Movies
 var M1_Clips = {
     type: jsPsychVideoKeyboardResponse,
-    stimulus: ['../movies/Movie_1/M1Clip1.mp4', '../movies/Movie_1/M1Clip2.mp4', '../movies/Movie_1/M1Clip3.mp4', '../movies/Movie_1/M1Clip4.mp4', '../movies/Movie_1/M1Clip5.mp4']
+    stimulus: ['movies/Movie_1/M1Clip1.mp4', 'movies/Movie_1/M1Clip2.mp4', 'movies/Movie_1/M1Clip3.mp4', 'movies/Movie_1/M1Clip4.mp4', 'movies/Movie_1/M1Clip5.mp4']
 }
 
 var block_images = {
   timeline: [
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/CABLab_behavior_online_consent.png'
+      stimulus: 'images/CABLab_behavior_online_consent.png'
     },
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/crossDiagram.png'
+      stimulus: 'images/crossDiagram.png'
     },
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/left_right_arrow.png'
+      stimulus: 'images/left_right_arrow.png'
     },
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/movie.png'
+      stimulus: 'images/movie.png'
     },
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/university.png'
+      stimulus: 'images/university.png'
     },
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/REST.png'
+      stimulus: 'images/REST.png'
     },
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/keyboard_image.png'
+      stimulus: 'images/keyboard_image.png'
     },
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/Slider_Video_Example.png'
+      stimulus: 'images/Slider_Video_Example.png'
     }
   ]
 }
