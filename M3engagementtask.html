@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Watching</title>
+
+        <!-- jsPsych plugins -->
+        <script src="jspsych/jspsych.js"></script>
+        <script src="jspsych/plugin-html-keyboard-response.js"></script>
+        <script src="jspsych/plugin-audio-keyboard-response.js"></script>
+        <script src="jspsych/plugin-browser-check.js"></script>
+        <script src="jspsych/plugin-call-function.js"></script>
+        <script src="jspsych/plugin-fullscreen.js"></script>
+        <script src="jspsych/plugin-html-button-response.js"></script>
+        <script src="jspsych/plugin-html-keyboard-response.js"></script>
+        <script src="jspsych/plugin-html-slider-response.js"></script>
+        <script src="jspsych/plugin-html-video-response.js"></script>
+        <script src="jspsych/plugin-instructions.js"></script>
+        <script src="jspsych/plugin-preload.js"></script>
+        <script src="jspsych/plugin-resize.js"></script>
+        <script src="jspsych/plugin-survey-html-form.js"></script>
+        <script src="jspsych/plugin-survey-multi-choice.js"></script>
+        <script src="jspsych/plugin-survey.js"></script>
+        <script src="jspsych/plugin-survey-text.js"></script>
+        <script src="jspsych/plugin-video-button-response.js"></script>
+        <script src="jspsych/plugin-image-keyboard-response.js"></script>
+        <script src="jspsych/plugin-video-keyboard-response.js"></script>
+        <script src="jspsych/plugin-video-slider-response.js"></script>
+        <script src="jspsych/plugin-external-html.js"></script>
+        <script src="jspsych/plugin-call-function.js"></script>
+        <!-- <script src="jspsych/test-utils.js"></script> -->
+
+        <!-- Measure Instructions -->
+        <script src="instructions/general_instructions.js" type="text/javascript"></script>
+        <script src="instructions/engagement_instructions.js" type="text/javascript"></script>
+        <script src="Movie3_Tasks/engagement/M3_engagement_Task_Functions.js" type="text/javascript"></script>
+
+        <!-- Attention Check -->
+        <script src="attention_check/movie3_questions.js" type="text/javascript"></script>
+
+        <!-- Task Info -->
+        <!-- <script src="movies.js" type="text/javascript"></script> -->
+        <script src="Movie3_Tasks/engagement/M3_engagementtask_timeline.js" type="text/javascript"></script>
+        <script src="utils.js" type="text/javascript"></script>
+
+        <!-- Stylesheet -->
+        <link href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <noscript>
+			<h1>Warning: Javascript seems to be disabled</h1>
+			<p>This website requires that Javascript be enabled on your browser.</p>
+			<p>Instructions for enabling Javascript in your browser can be found
+			<a href="http://support.google.com/bin/answer.py?hl=en&answer=23852">here</a></p>
+		</noscript>
+    </body>
+    <script>
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Prolific is used to get participants. You must finish writing your experiment code first, then set up running your code online.
+        // Some helpful options for running code online are discussed here: https://www.jspsych.org/7.3/overview/running-experiments/#hosting-the-experiment-and-saving-the-data
+
+        // Integrating with Prolific: https://www.jspsych.org/7.3/overview/prolific/
+
+        // var jsPsych = initJsPsych();
+
+
+        // const jsPsych = initJsPsych({
+        //     on_finish: function() {
+        //         jsPsych.data.displayData();
+        //         // window.location = "https://app.prolific.co/submissions/complete?cc=XXXXXXX"
+        //     }
+        //     }
+        // );
+        
+        // // capture info from Prolific
+        // var subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
+        // var study_id = jsPsych.data.getURLVariable('STUDY_ID');
+        // var session_id = jsPsych.data.getURLVariable('SESSION_ID');
+        // var movie_condition_id = jsPsych.data.getURLVariable('MOVIE_CONDITION_ID')
+        // var measure_condition_id = jsPsych.data.getURLVariable('MEASURE_CONDITION_ID')
+        
+        // jsPsych.data.addProperties({
+        //     subject_id: subject_id,
+        //     study_id: study_id,
+        //     session_id: session_id,
+        //     movie_condition_id: movie_condition_id,
+        //     measure_condition_id: measure_condition_id
+        // });
+        
+        // // create the rest of the experiment
+        // var timeline = []
+                
+        // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Option #1: Participant Clicks Link to Redirect back to Prolific - UPDATE LINK
+        // var final_trial = {
+        //     type: jsPsychHtmlKeyboardResponse,
+        //     stimulus: `<p>You've finished the last task. Thanks for participating!</p>
+        //         <p><a href="https://app.prolific.co/submissions/complete?cc=XXXXXXX">Click here to return to Prolific and complete the study</a>.</p>`,
+        //     choices: "NO_KEYS"
+        // };
+        
+        // Option #2: Participant is Automatically Redirected back to Prolific - UPDATE LINK 
+        // var jsPsych = initJsPsych({
+        //     on_finish: function(){
+        //         window.location = "https://app.prolific.co/submissions/complete?cc=XXXXXXX"
+        //     }
+        // });
+        
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    </script>
+</html>
