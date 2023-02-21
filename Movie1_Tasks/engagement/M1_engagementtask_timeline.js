@@ -33,96 +33,96 @@ jsPsych.data.addProperties({
 
 
 
-var preload = {
-  type: jsPsychPreload,
-  auto_preload: true,
-  // video: ,
-  message: 'Please wait while the experiment loads. This may take a minute.',
-  show_progress_bar: true,
-  max_load_time: 300000, // 2 minutes
-  error_message: 'The experiment failed to load - sorry about this! Please try moving to a location with a better WiFi connection.',
-  continue_after_error: false,
-  show_detailed_errors: true,
-  // on_error: function(file) {
-  //   file_error_count++;
-  //   console.log('Error: ',file);
-  // },
-  // on_success: function(file) {
-  //   file_load_count++;
-  //   console.log('Loaded: ',file)
-  // }
-}
+// var preload = {
+//   type: jsPsychPreload,
+//   auto_preload: true,
+//   // video: ,
+//   message: 'Please wait while the experiment loads. This may take a minute.',
+//   show_progress_bar: true,
+//   max_load_time: 300000, // 2 minutes
+//   error_message: 'The experiment failed to load - sorry about this! Please try moving to a location with a better WiFi connection.',
+//   continue_after_error: false,
+//   show_detailed_errors: true,
+//   // on_error: function(file) {
+//   //   file_error_count++;
+//   //   console.log('Error: ',file);
+//   // },
+//   // on_success: function(file) {
+//   //   file_load_count++;
+//   //   console.log('Loaded: ',file)
+//   // }
+// }
 
 
-// Preloading Practice Clip & Practice Audio. Will need to manually load task videos.
-// For more information: https://www.jspsych.org/7.3/overview/media-preloading/
+// // Preloading Practice Clip & Practice Audio. Will need to manually load task videos.
+// // For more information: https://www.jspsych.org/7.3/overview/media-preloading/
 
-var audiotest_trial = {
-  type: jsPsychAudioKeyboardResponse,
-  stimulus: 'audio/waterfall.mp3'
-}
+// var audiotest_trial = {
+//   type: jsPsychAudioKeyboardResponse,
+//   stimulus: 'audio/waterfall.mp3'
+// }
 
-// Preloading Clips from Movies
-var M1_Clips = {
-    type: jsPsychVideoKeyboardResponse,
-    stimulus: ['movies/Movie_1/M1Clip1.mp4', 'movies/Movie_1/M1Clip2.mp4', 'movies/Movie_1/M1Clip3.mp4', 'movies/Movie_1/M1Clip4.mp4', 'movies/Movie_1/M1Clip5.mp4']
-}
+// // Preloading Clips from Movies
+// var M1_Clips = {
+//     type: jsPsychVideoKeyboardResponse,
+//     stimulus: ['movies/Movie_1/M1Clip1.mp4', 'movies/Movie_1/M1Clip2.mp4', 'movies/Movie_1/M1Clip3.mp4', 'movies/Movie_1/M1Clip4.mp4', 'movies/Movie_1/M1Clip5.mp4']
+// }
 
-var block_images = {
-  timeline: [
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/CABLab_behavior_online_consent.png'
-    },
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/crossDiagram.png'
-    },
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/left_right_arrow.png'
-    },
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/movie.png'
-    },
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/university.png'
-    },
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/REST.png'
-    },
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/keyboard_image.png'
-    },
-    {
-      type: jsPsychImageKeyboardResponse,
-      stimulus: 'images/Slider_Video_Example.png'
-    }
-  ]
-}
+// var block_images = {
+//   timeline: [
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/CABLab_behavior_online_consent.png'
+//     },
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/crossDiagram.png'
+//     },
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/left_right_arrow.png'
+//     },
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/movie.png'
+//     },
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/university.png'
+//     },
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/REST.png'
+//     },
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/keyboard_image.png'
+//     },
+//     {
+//       type: jsPsychImageKeyboardResponse,
+//       stimulus: 'images/Slider_Video_Example.png'
+//     }
+//   ]
+// }
 
-var preload_images = {
-  type: jsPsychPreload,
-  trials: block_images
-}
+// var preload_images = {
+//   type: jsPsychPreload,
+//   trials: block_images
+// }
 
-var browsercheck = {
-    type: jsPsychBrowserCheck,
-    inclusion_function: (data) => {
-      return data.mobile === false
-    },
-    exclusion_message: (data) => {
-      if(data.mobile){
-        return '<p>You must use a desktop/laptop computer to participate in this experiment.</p>'
-      } 
-    }
-  }
+// var browsercheck = {
+//     type: jsPsychBrowserCheck,
+//     inclusion_function: (data) => {
+//       return data.mobile === false
+//     },
+//     exclusion_message: (data) => {
+//       if(data.mobile){
+//         return '<p>You must use a desktop/laptop computer to participate in this experiment.</p>'
+//       } 
+//     }
+//   }
 
-jsPsych.run([preload, preload_images, audiotest_trial, M1_Clips, browsercheck]);
+// jsPsych.run([preload, preload_images, audiotest_trial, M1_Clips, browsercheck]);
 
  
 var timeline = []
