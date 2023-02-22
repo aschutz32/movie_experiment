@@ -32,7 +32,7 @@ function Welcome() {
 function Consent() {
   var trial = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: '<img src="./images/CABLab_behavior_online_consent.png"></img>',
+    stimulus: '<img src="../images/CABLab_behavior_online_consent.png"></img>',
     choices: ['<h3>Yes, I consent to participate</h3>', '<h3>No, I do not consent to participate</h3>'],
     data: {function: 'Consent' },
     on_finish: function(data){
@@ -50,7 +50,7 @@ function Instructions() {
       pages: [
           '<h3>During this task, you will watch videos that are about 15 minutes long in total.</h3><br><br>', 
           '<h3>Throughout the videos you will <i>continuously</i> rate your experience.</h3><br><br>',
-          'At the end of the videos, you will answer a few questions to ensure you paid attention.<br> <h4><b>Compensation is contingent on watching and listening to <i>all videos</i>, including periods when the word "REST" is on the screen, and completing <i>all of the questions</i></b>. <br><br>Respond during the video clips <i>and</i> when "REST" is shown: <br><img src="./images/REST.png"></img></h3><br><br>',
+          'At the end of the videos, you will answer a few questions to ensure you paid attention.<br> <h4><b>Compensation is contingent on watching and listening to <i>all videos</i>, including periods when the word "REST" is on the screen, and completing <i>all of the questions</i></b>. <br><br>Respond during the video clips <i>and</i> when "REST" is shown: <br><img src="../images/REST.png"></img></h3><br><br>',
       ],
       show_clickable_nav: true,
       data: {function: 'Instructions' }
@@ -86,7 +86,7 @@ function getFullscreen(){
 function playPracticeAudio(){
   var trial = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: './audio/waterfall.mp3',
+    stimulus: '../audio/waterfall.mp3',
     choices: "ALL_KEYS",
     prompt: `<h2>Please adjust volume to a <span class='blue'><i>comfortable level</i></span></h2><br><p>Press any key to continue.</p><br><br>`,
     response_ends_trial: true, 
@@ -177,7 +177,7 @@ function PracticeAudioRepeat(){
 function playPracticeAudio2(){
   var trial = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: './audio/waterfall.mp3',
+    stimulus: '../audio/waterfall.mp3',
     choices: "ALL_KEYS",
     prompt: `<h2>Please adjust volume to a <span class='blue'><i>comfortable level</i></span></h2><br><p>Press any key to continue.</p><br><br>`,
     response_ends_trial: true, 
@@ -236,7 +236,7 @@ function KeyboardInstructions(){
     type: jsPsychInstructions,
     pages: [
       '<h3>To move the slider, you will press the LEFT or RIGHT arrow keys on your keyboard.</h3>' + '<br>' +
-      '<img src="./images/keyboard_image.png"></img>'
+      '<img src="../images/keyboard_image.png"></img>'
     ],
     button_label_next: "Continue",
     show_clickable_nav: true,
