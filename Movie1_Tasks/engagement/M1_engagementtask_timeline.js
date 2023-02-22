@@ -72,7 +72,8 @@ var block_images = {
   timeline: [
     {
       type: jsPsychImageKeyboardResponse,
-      stimulus: '../images/CABLab_behavior_online_consent.png'
+//       stimulus: '../images/CABLab_behavior_online_consent.png'
+      stimulus: '/images/CABLab_behavior_online_consent.png
     },
     {
       type: jsPsychImageKeyboardResponse,
