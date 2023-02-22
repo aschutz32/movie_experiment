@@ -49,7 +49,7 @@ function getInstructionsProcedureDefinitionEngagement(){
   function practiceClipTaskEngagement(){
     var trial = {
       type: jsPsychVideoSliderResponse,
-      stimulus: ['../movies/Practice_Video.mp4'],
+      stimulus: ['movies/Practice_Video.mp4'],
       labels: SLIDE_LABELS,
       // width: 1280,
       // height: 720,
