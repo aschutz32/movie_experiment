@@ -26,7 +26,7 @@
   function Experiment_Start_M1Clip1_Eng(){
     var trial = {
       type: jsPsychVideoSliderResponse,
-      stimulus: ['./movies/Movie_1/M1Clip1.mp4'], 
+      stimulus: ['../movies/Movie_1/M1Clip1.mp4'], 
       button_label: '',
       labels: SLIDE_LABELS_ENGAGEMENT,
       trial_ends_after_video: true,
@@ -45,7 +45,7 @@
   function Experiment_Start_M1Clip2_Eng(){
     var trial = {
       type: jsPsychVideoSliderResponse,
-      stimulus: ['./movies/Movie_1/M1Clip2.mp4'],
+      stimulus: ['../movies/Movie_1/M1Clip2.mp4'],
       button_label: '',
       labels: SLIDE_LABELS_ENGAGEMENT,
       trial_ends_after_video: true,
@@ -64,7 +64,7 @@
   function Experiment_Start_M1Clip3_Eng(){
     var trial = {
       type: jsPsychVideoSliderResponse,
-      stimulus: ['./movies/Movie_1/M1Clip3.mp4'],
+      stimulus: ['../movies/Movie_1/M1Clip3.mp4'],
       button_label: '',
       labels: SLIDE_LABELS_ENGAGEMENT,
       trial_ends_after_video: true,
@@ -83,7 +83,7 @@
   function Experiment_Start_M1Clip4_Eng(){
     var trial = {
       type: jsPsychVideoSliderResponse,
-      stimulus: ['./movies/Movie_1/M1Clip4.mp4'],
+      stimulus: ['../movies/Movie_1/M1Clip4.mp4'],
       button_label: '',
       labels: SLIDE_LABELS_ENGAGEMENT,
       trial_ends_after_video: true,
@@ -102,7 +102,7 @@
   function Experiment_Start_M1Clip5_Eng(){
     var trial = {
       type: jsPsychVideoSliderResponse,
-      stimulus: ['./movies/Movie_1/M1Clip5.mp4'],
+      stimulus: ['../movies/Movie_1/M1Clip5.mp4'],
       button_label: '',
       labels: SLIDE_LABELS_ENGAGEMENT,
       trial_ends_after_video: true,
